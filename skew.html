@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>First Application</title>
+<script type = "text/javascript" src = "jquery-1.11.3.min.js"></script>
+
+
+
+<style>
+.selected { color:red; background: #333 }
+.selected2 { background: #3333FF }
+.selected3 { background:#CCFF33 }
+.clickdivs2 p span { background:#000; color: #fff; }
+.selected4{ background: #FF6699}
+
+.asd{ float: left; width:100%;}
+</style>
+</head>
+
+<body>
+<div id="demo"></div>
+<div id="demo2"></div>
+
+
+</body>
+<script type = "text/javascript" language = "javascript">
+
+var myhome, text, flen, i;
+myhome = ["bed", "dor", "gate", "window"];
+flen = myhome.length;
+
+console.log(bikes[0] + " >>>>>>");
+
+var cars = ["saas", "volvo", "bmw"];
+
+var bikes = new Array ("bajaj", "yamaha", "tvs", "hero");
+var person = {
+    firstname : "amar",
+	lastname: "doe",
+	age: 64,
+}
+
+bikes[0] = "amar";
+
+document.getElementById("demo").innerHTML = bikes[bikes.length-2];
+//document.getElementById("demo2").innerHTML = person.firstname;
+document.getElementById("demo2").innerHTML = flen;
+//document.getElementById("demo").innerHTML = cars;
+
+console.log(bikes[0] + " >>>>>>");
+console.log(person.age + " >>>>>>");
+//console.log(bikes +" bike length "+ bikes.length+ " >>>>>>");
+
+$(document).ready(function() {
+//$("#demo").html(cars);
+});
+
+        // $(document).ready(function() {
+          // $(".attrone").html(employee.name + ",<br> salery:" + employee.getSalery() + ",<br>my id:"+ employee.emp_Id);	   
+		  // });
+		   
+		 //   var employee = {
+		  // name : "Amar Poddar",
+		  // emp_Id : 1,
+		  // getSalery: function(){
+		  // return 10000;
+		 //  }
+		// }
+         
+</script>
+</html>
