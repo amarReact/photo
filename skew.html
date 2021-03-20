@@ -1,72 +1,112 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>First Application</title>
-<script type = "text/javascript" src = "jquery-1.11.3.min.js"></script>
-
-
-
+<title>Page Title</title>
 <style>
-.selected { color:red; background: #333 }
-.selected2 { background: #3333FF }
-.selected3 { background:#CCFF33 }
-.clickdivs2 p span { background:#000; color: #fff; }
-.selected4{ background: #FF6699}
+	*{ margin: 0px; padding: 0px; box-sizing: border-box;}
+	.headerDiv{  background: red; float: left; width: 100%;  transform: skew(0deg, 1deg) translateY(-25px);
+	 z-index: 2; position: relative;}
+	.smallContainer{ margin: auto; width: 1260px;}
+	.logo{ float: left;}
+	.headerDiv p{ float: right;}
+	.headerDivIn{ float: left; width: 100%; transform: skew(0deg, -1deg); padding: 50px 0; }
 
-.asd{ float: left; width:100%;}
+	.middleDiv{ float: left; width: 100%; background: yellow; transform: skew(0deg, -1deg) translateY(-60px);}
+	.middleDivin{ float: left; width: 100%;  padding: 100px 0; transform: skew(0deg, 1deg);}
+	.container{  width: 100%;}
+
+	.middle{ background: #ddd; float: left; width: 100%; padding: 100px 0; margin: -90px 0 0 0;}
+
+	.footer {
+    float: left;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    transform: skew(
+0deg
+, 
+1deg
+) translateY(-50px);
+    padding: 100px 0;
+    margin: 0px 0 0 0;
+	position: relative;
+}
+	.footerin{ float: left; width: 100%; transform: skew(0deg, -1deg) }
+	.footerBanner{ background: #000; height: 100px; width: 100%; float: left; margin: -70px 0 0 0; }
+
+	.bannerdiv{ background: #fff; float: left; width: 100%; border: 1px solid #ddd; border-radius: 5px; margin-bottom: -180px; transform: skew(0deg, 1deg); padding: 50px;}
+	.bannerdivin{ float: left; width: 100%; transform: skew(0deg, -1deg);}
+	.middle{ float: left; width: 100%; padding-top: 150px;}
+	.middle li{ float: left; width: 48%; margin: 0 5px 20px 5px; background: green; border:1px solid #ddd; list-style: none; padding: 20px; border-radius: 5px;}
+	.middle h2{ text-align: center; padding:0 0 20px 0;}
+
+	.middle li.left{ transform: skew(0deg, 1deg); }
+	.middle li.left aside{ transform: skew(0deg, -1deg);}
+	.middle li.right{ transform: skew(0deg, -1deg); }
+	.middle li.right aside{ transform: skew(0deg, 1deg);}
+
+	.anm{ width: 500px; height: 300px; background: pink; border-radius: 5px;  float: left; margin: 50px 0; transform: skew(-5deg, -5deg);}
+	.anmIn{ float: left; width: 100%;   transform: skew(5deg, 5deg); padding: 50px; }
 </style>
 </head>
 
 <body>
-<div id="demo"></div>
-<div id="demo2"></div>
 
+	<div class="container">
+
+		<div class="headerDiv">
+			<div class="headerDivIn">
+			<div class="smallContainer">
+				<a href="#" class="logo">Mylogo</a> <p>this is my first design</p>
+			</div>
+			</div>
+		</div>
+
+		<div class="middleDiv">
+			<div class="middleDivin">
+			<div class="smallContainer">
+				<div class="bannerdiv">
+					<div class="bannerdivin">
+				<p>this is my first design</p><p>this is my first design</p><p>this is my first design</p><p>this is my first design</p> <p>this is my first design</p>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="middle">
+			<div class="smallContainer">
+				<h2>this is heading</h2>
+				<ul>
+					<li class="left"><aside><p>this is my first design</p><p>this is my first design</p></aside></li>
+					<li class="right"><aside><p>this is my first design</p><p>this is my first design</p></aside></li>
+					<li class="left"><aside><p>this is my first design</p><p>this is my first design</p></aside></li>
+					<li class="right"><aside><p>this is my first design</p><p>this is my first design</p></aside></li>
+				</ul>
+
+				<hgroup class="anm">
+					<div class="anmIn">
+					<p>this is my first design</p><p>this is my first design</p><p>this is my first design</p><p>this is my first design</p> <p>this is my first design</p>
+					</div>
+				</hgroup>
+
+			</div>
+		</div>
+
+
+		<div class="footer">
+			
+			<div class="footerin">
+				
+			<div class="smallContainer">
+			<p>this is my first design</p><p>this is my first design</p><p>this is my first design</p><p>this is my first design</p> <p>this is my first design</p>
+			</div>
+		</div>
+		</div>
+
+		<div class="footerBanner"></div>
+		
+	</div>  
 
 </body>
-<script type = "text/javascript" language = "javascript">
-
-var myhome, text, flen, i;
-myhome = ["bed", "dor", "gate", "window"];
-flen = myhome.length;
-
-console.log(bikes[0] + " >>>>>>");
-
-var cars = ["saas", "volvo", "bmw"];
-
-var bikes = new Array ("bajaj", "yamaha", "tvs", "hero");
-var person = {
-    firstname : "amar",
-	lastname: "doe",
-	age: 64,
-}
-
-bikes[0] = "amar";
-
-document.getElementById("demo").innerHTML = bikes[bikes.length-2];
-//document.getElementById("demo2").innerHTML = person.firstname;
-document.getElementById("demo2").innerHTML = flen;
-//document.getElementById("demo").innerHTML = cars;
-
-console.log(bikes[0] + " >>>>>>");
-console.log(person.age + " >>>>>>");
-//console.log(bikes +" bike length "+ bikes.length+ " >>>>>>");
-
-$(document).ready(function() {
-//$("#demo").html(cars);
-});
-
-        // $(document).ready(function() {
-          // $(".attrone").html(employee.name + ",<br> salery:" + employee.getSalery() + ",<br>my id:"+ employee.emp_Id);	   
-		  // });
-		   
-		 //   var employee = {
-		  // name : "Amar Poddar",
-		  // emp_Id : 1,
-		  // getSalery: function(){
-		  // return 10000;
-		 //  }
-		// }
-         
-</script>
 </html>
